@@ -16,15 +16,23 @@
   <body>
     <div class="container">
       <h1>Hi, there!</h1>
-      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge text-bg-secondary">4</span>
+      </button>
       <button type="button" class="btn btn-warning text-white">Warning</button>
       <button type="button" class="btn btn-outline-secondary">Secondary</button>
       <button type="button" class="btn btn-primary btn-lg">Large button</button>
       <button type="button" class="btn btn-secondary btn-sm">
         Small button
       </button>
-      <button type="button" class="btn btn-outline-danger" disabled>
-        Close
+      <button type="button" class="btn btn-outline-info position-relative">
+        Alert
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
       </button>
       <input class="btn btn-warning" type="reset" value="Reset" />
       <p>
@@ -60,6 +68,34 @@
           Someone famous in <cite title="Source Title">Source Title</cite>
         </figcaption>
       </figure>
+
+      <div
+        class="btn-group btn-group-sm"
+        role="group"
+        aria-label="Basic example"
+      >
+        <button type="button" class="btn btn-primary">Show</button>
+        <button type="button" class="btn btn-info">Edit</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </div>
+
+      <!-- <button class="btn btn-primary" type="button" disabled>
+        <span
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Loading...</span>
+      </button> -->
+
+      <button class="btn btn-primary" type="button" disabled>
+        <span
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+        Loading...
+      </button>
     </div>
 
     <script
